@@ -1,0 +1,54 @@
+body {font-family: 'Microsoft Yahei';}
+.text-blue {color:#4A90E2;}
+.btn-primary {background-color: #165491;}
+.text-primary {color:#165491;}
+.page-header{font-size: 18px;}
+/*顶部导航样式定义 开始*/
+#top-nav {background-color: #fff; padding-top: 15px; padding-bottom: 15px;margin-bottom: 0px;}
+#top-nav .navbar-brand {padding: 0px;}
+#toggle-menu > ul {margin-left: 20px;}
+#toggle-menu > ul > li > a {font-size: 18px;}
+#toggle-menu > ul > li.active > a {background-color:#fff; color:#000;}
+#toggle-menu #right-menu {margin-bottom: 0px; line-height: 50px;}
+/*顶部导航样式定义 结束*/
+
+/*底栏样式定义 开始*/
+footer {background-color: #272727; padding: 20px 0px 20px 0px; color:#fff;}
+footer a {color: #fff;}
+footer a:hover {color: #fff; text-decoration: none;}
+footer #footer-link-nav {font-size: 16px; margin-top: 10px; margin-bottom: 10px;}
+footer #footer-contact {font-size: 16px; margin-top: 10px;}
+footer ol li {padding-top:5px;}
+/*底栏样式定义 结束*/
+
+
+/* 收获样式 开始 */
+#shouh{text-align: center;}
+#shouh a{color: white;text-decoration: none;display: inline-block;}
+/* 收获样式 结束 */
+/* 轮播图 开始 */
+.focus {
+        width: 1100px;
+        height: 450px;
+        background-color: pink;
+        margin: 60px auto;
+    }
+.carousel,
+ .carousel img {
+        width: 100%;
+        height: 450px!important;
+		
+    }
+	/* 轮播图 结束 */
+.jumbotron{
+				background-image:url('../images/R%6087L(GL%253XD~6E%5BDWX%60%25$Y.jpg');
+				
+			}
+.carousel-caption a{
+	text-decoration: none;
+	color: white;
+}
+.carousel-caption a:hover{
+	
+	color:blue;
+}

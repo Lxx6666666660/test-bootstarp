@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面-->
+    <title>房产区</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet"> 
+    <link href="css/haifang.css" rel="stylesheet">  
+	<!-- 引入jQuery -->
+	<script src="js/jquery-3.6.0.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。-->
+	<script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+	  <!-- 导航栏 开始 -->
+   <nav id="top-nav" class="navbar navbar-default">
+     <div class="container">
+     
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+         data-target="#toggle-menu" aria-expanded="false">
+           <span class="sr-only">展开按钮</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">
+           <img src="./images/fuwu.png" alt="" style="width: 60%;">
+         </a>
+       </div>
+   
+    
+       <div class="collapse navbar-collapse" id="toggle-menu">
+         <ul class="nav navbar-nav">           
+           <li class="active"><a href="index.html"><strong>首页</strong></a></li>
+           <li><a href="two.html"><strong>房产区</strong></a></li>
+           <li><a href="three.html"><strong>旅游区</strong></a></li>
+           <li><a href="#"><strong>家具区</strong></a></li> 
+          <li class="dropdown">
+                          <a href="four（baike）.html" class="dropdown-toggle" data-toggle="dropdown">
+                             <strong>百科区</strong> 
+                              <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="four（baike）.html">特色百科</a></li>
+                              <li><a href="#">艺术百科</a></li>
+                              <li><a href="#">校园百科</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">百科冷知识</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">百科商城</a></li>
+                          </ul>
+                      </li>                     
+         </ul>
+      
+         <p class="navbar-text navbar-right">
+             <img src="images/user.png" alt="">&nbsp;
+             <a href="#" class="navbar-link" data-toggle="modal" data-target="#modal-login">
+               <span class="text-blue">登录</span></a> |
+             <a href="#" class="navbar-link" data-toggle="modal" data-target="#modal-register">
+               <span class="text-blue">注册</span></a>
+         </p>          
+       </div>
+     </div>
+   </nav>
+
+
+   <!-- 导航栏 结束 -->
+   <!-- 登录模态框 开始 -->
+   <div id="modal-login" class="modal fade" tabindex="-1" role="dialog">
+     <div class="modal-dialog modal-sm" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span></button>
+           <h3>用户登录</h3>
+         </div>
+         <div class="modal-body">          
+           <form action=""> 
+             <div class="form-group">
+               <p class="text-danger">用户名不允许为空</p>
+             </div>
+             <div class="form-group">              
+               <input type="text" name="username" class="form-control" placeholder="请输入用户名"> 
+             </div> 
+             <div class="form-group"> 
+               <input type="password" name="password" class="form-control" placeholder="请输入密码">
+             </div> 
+             <div class="form-group checkbox">
+               <label>
+                 <input type="checkbox" value="">记住密码
+               </label>
+             </div>
+             <div class="form-group"> 
+               <button type="submit" class="btn btn-primary btn-block">登录</button>
+             </div> 
+           </form>  
+         </div>       
+       </div>
+     </div>
+   </div>
+   <!-- 登录模态框 结束 -->
+   
+   <!-- 注册模态框 开始 -->
+   <div id="modal-register" class="modal fade" tabindex="-1" role="dialog">
+     <div class="modal-dialog modal-sm" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span></button>
+           <h3>用户注册</h3>
+         </div>
+         <div class="modal-body">          
+           <form action=""> 
+             <div class="form-group">
+               <p class="text-danger">密码不允许为空</p>
+             </div>
+             <div class="form-group">              
+               <input type="text" name="username" class="form-control" placeholder="请输入用户名"> 
+             </div> 
+             <div class="form-group"> 
+               <input type="password" name="password" class="form-control" placeholder="请输入密码">
+             </div>
+             <div class="form-group"> 
+               <input type="password" name="repassword" class="form-control" placeholder="请再次输入密码">
+             </div>  
+             <div class="form-group"> 
+               <input type="password" name="phone" class="form-control" placeholder="请输入手机号码">
+             </div>  
+             <div class="form-group">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="输入验证码">
+                 <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">获取验证码</button>
+                 </span>
+               </div>
+             </div>
+             <div class="form-group"> 
+               <button type="submit" class="btn btn-primary btn-block">注册</button>
+             </div> 
+           </form>  
+         </div>       
+       </div>
+     </div>
+   </div>
+   <!-- 注册模态框 结束 -->
+   <div>
+	   
+   </div>
+  <!-- 轮播图 开始 -->
+  <div id="hotproject">
+    <div class="container">
+   <p class="page-header">热门房产
+   <h2 class="text-center text-danger"><strong>web210133李香香</strong></h2></p>
+		<div class="focus">
+		        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		            <!-- Indicators 小圆点-->
+		            <ol class="carousel-indicators">
+		                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		            </ol>
+		 
+		            <!-- Wrapper for slides 轮播图-->
+		            <div class="carousel-inner" role="listbox">
+		                <div class="item active">
+		                    <img src="images/aticle-img.png" alt="...">
+		                    <div class="carousel-caption">
+		                        房产一
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <img src="images/build-lg.jpg" alt="...">
+		                    <div class="carousel-caption">
+		                      房产二
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <img src="images/building.jpg" alt="...">
+		                    <div class="carousel-caption">
+		                       房产三
+		                    </div>
+		                </div>
+		            </div>
+		 
+		            <!-- Controls 左右翻页-->
+		            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		                <span class="sr-only">Previous</span>
+		            </a>
+		            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		                <span class="sr-only">Next</span>
+		            </a>
+		        </div>
+		    </div>
+		</div>
+		</div>
+
+	<!-- 轮播图 结束 -->
+	<div class="row mt-2">
+		
+		<div class="col-sm-6">
+			<h4 class="text-center text-white">房产介绍</h4>
+			<!-- 选项卡菜单-->
+			<ul id="myTab" class="nav nav-tabs" role="tablist">
+			    <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">房产地段</a></li>
+			    <li><a href="#rule" role="tab" data-toggle="tab">房产价格</a></li>
+			    <li><a href="#forum" role="tab" data-toggle="tab">小区评论</a></li>
+			    <li><a href="#security" role="tab"  data-toggle="tab">房产款式</a></li>
+			  
+			</ul>
+			<!-- 热门房产 开始 -->
+			<div id="myTabContent" class="tab-content">
+			    <div class="tab-pane active" id="bulletin"><div class="media">
+								<img src="./images/build-lg.jpg" class="img-thumbnail mr-3">
+								<div class="media-body">
+									<p class="text-secondary">
+										豪华大别墅，环海郊区，环境优美，安静养生。
+									</p>
+							
+								</div>
+							</div>
+						</div>
+			    <div class="tab-pane " id="rule"><div class="media">
+								<img src="images/build-detail-01.jpg" class="img-thumbnail mr-4">
+								<div class="media-body">
+									<p class="text-secondary">前4月全国房企房屋新开工面积31220万平方米，下降21.2%（一季度同比下降19.2%）。其中，住宅新开工面积22900万平方米，下降20.6%（一季度同比下降17.8%），跌幅分别扩大2.0%、2.8%。
+									</p>
+								
+								</div>
+							</div>
+							</div>
+			    <div class="tab-pane " id="forum"><div class="media">
+								<img src="./images/build-sm1.jpg" class="img-thumbnail mr-4">
+								<div class="media-body">
+									<pl class="text-secondary">
+房地产市场目前还未完全的销售回暖、投资意愿恢复缓慢、资金面良好的正向循环没有形成。预计房企资金端短期内难以传导至投资端、供应端，商品房施工面积、新开工面积的持续下降，就是证明
+									</p>
+									
+								</div>
+							</div>
+							</div>
+			    <div class="tab-pane " id="security"><div class="media">
+								<img src="images/build-detail-02.jpg" class="img-thumbnail mr-4">
+								<div class="media-body">
+									<p class="text-secondary">
+										带车库二层别墅房屋设计图
+										图纸介绍：本方案为带车库二层别墅房屋设计图，二层有一个露天露台和一个室内露台，外墙配色协调，户型设计合理。（如果不需要车库，建造时车库可以改成卧室）
+									</p>
+									
+								</div>
+							</div>
+						</div>
+				
+			</div>
+				
+			</div>
+		
+		<div class="col-sm-6">
+			<h4 class="text-center text-white">楼房外观</h4>
+			<div class="media">
+				<img src="images/banner-bg.jpg" class="img-fluid mr-3" width="160">
+				<div class="media-body text-white align-self-center">
+					<h5>剧情参考</h5>
+					<p>图纸介绍：这款二层别墅占地156平米，面宽12米左右，欧式风格，室内5室3厅带大露台设计。大落地窗时尚大气，使别墅采光更通透。入户是堂屋，结合农村的生活习惯，方便实用。作为进出别墅的过渡区间，客厅设在堂屋西侧，面积充裕，方便接待来访客人；厨房餐厅在后，洁污分区。两个卧室，大小舒适。二层起居空间，客厅连着阳台，通风采光极好，露台开阔活动场地，可打造一个极享受的露台花园。
+占地面积：11.8m*15.1m，156.54平方米左右；建筑层高：二层；建筑高度：9.85米（含屋顶）；设计功能一层户型：堂屋、客厅、餐厅、厨房、卧室（带卫生间）、卧室、卫生间；
+
+二层户型：客厅、卧室（带卫生间）、卧室x2、卫生间、露台、阳台。</p>
+				</div>
+			</div>
+			<div class="media mt-2">
+				<div class="media-body text-white align-self-center">
+					<h5>取景地点</h5>
+					<p>江户东京建物公园里头的文具店“武居三省堂”里放置东西的木柜为剧中锅炉爷爷存放泡澡用药材木柜的范本。园内里也放置著类似动画里海原电铁电车外观的列车厢
+					江户日本桥往山梨县的甲州街道，靠山上一带的住宿区做为开头千寻往新家路上场景参考来源。</p>
+					</div>
+					<img src="images/build-sm2.jpg" class="img-fluid ml-3" width="160">
+			</div>
+		</div>
+	</div>
+	<!-- 热门房产 结束 -->
+  <!-- 底部 开始 -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+         <img src="./images/fuwu.png" alt="" >
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12">
+          <div class="row" id="footer-link-nav">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-left"><a href="">关于我们</a></div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center"><a href="">商务合作</a></div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center"><a href="">服务协议</a></div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center"><a href="">使用条款</a></div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center"><a href="">加入我们</a></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-left">
+              &copy;2015-2020 智能APP科技有限责任公司 All right reserved 京ICP备15023579
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xm-12">         
+          <div class="row" id="footer-contact">
+            <div class="col-lg-12 col-sm-6 col-xs-6 text-blue">400-100-1234</div>
+            <div class="col-lg-12">info@haifangbest.com</div>
+          </div>
+        </div>
+      </div>
+    
+     
+    </div>    
+  </footer>
+  <!-- 底栏 结束 -->
+ <script>
+         $('.carousel').carousel({
+             interval: 1000
+         })
+ </script>
+  
+
+    </body>
+  </html>
+  
